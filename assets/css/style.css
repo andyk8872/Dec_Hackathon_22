@@ -1,0 +1,31 @@
+/* globals */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #00372d;
+    --secondary-color: #f4f6ed;
+}
+
+/* index */
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+section > * {
+    padding: 1rem;
+}
+
+
