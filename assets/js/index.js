@@ -13,7 +13,6 @@ function hideAllSlides() {
     }
 }
 
-
 const handleMoveToNextSlide = function(e) {
     hideAllSlides();
   
