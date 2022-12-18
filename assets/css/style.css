@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
 /* globals */
 
 * {
@@ -7,8 +9,12 @@
 }
 
 :root {
-    --primary-color: #00372d;
-    --secondary-color: #f4f6ed;
+    --color-1-gr: #00372d;
+    --color-2-ye-dk: #aa9049;
+    --color-3-ye-li: #ffbd59;
+    --color-4-re-dk: #782722;
+    --color-5-re-li: #b62d29;
+    --color-6-wh: #f4f6ed;
 }
 
 /* nav bar */
@@ -39,12 +45,12 @@ a, a:hover, a:visited, a:active {
     justify-content: center;
 }
 
-  #menu a:hover {
+#menu a:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
-  }
-  
-  @keyframes shake {
+}
+
+@keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -56,14 +62,13 @@ a, a:hover, a:visited, a:active {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-
+}
 
 /* index */
 
 body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--color-1-gr);
+    color: var(--color-6-wh);
     font-size: 1.4rem;
     font-weight: 700;
 }
@@ -72,102 +77,7 @@ section {
     margin: 2rem 0;
 }
 
-section>* {
-    padding: 1rem;
-}
-
-
-/* Carousel */
-
-.carousel {
-    max-width: 600px;
-    position: relative;
-    margin: 0 auto;
-}
-
-.carousel .carousel-item,
-.carousel .carousel-item-hidden {
-    display: none;
-    /* hide all slide images not currently being viewed */
-}
-
-.carousel .carousel-item-visible {
-    display: block;
-    /* show current slide image */
-    animation: fadeVisibility 0.5s;
-    /* for fading effect when switching between slides */
-}
-
-.carousel .carousel-item img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* Navigation control styles */
-.carousel .carousel-actions {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    /* put space between the navigation buttons */
-    position: absolute;
-    /* position navigation buttons on top */
-    top: 50%;
-    /* center navigation buttons on the slide */
-    transform: translateY(-50%);
-    /* align navigation buttons */
-}
-
-.carousel .carousel-actions button {
-    border-radius: 50px;
-    background-color: white;
-    border: 0;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-}
-
-.carousel .carousel-actions button#carousel-button-prev {
-    margin-left: 20px;
-    /* prevent previous button from touching the side*/
-}
-
-.carousel .carousel-actions button#carousel-button-next {
-    margin-right: 20px;
-    /* prevent next button from touching the side*/
-}
-
-.carousel-dots {
-    text-align: center;
-}
-
-.dot {
-    opacity: 0.7;
-    /* gray out dots for slides not being visted */
-}
-
-.dot:focus {
-    border: 1px solid black;
-    /* dot for currently visited slide */
-}
-
-/* hanlde smooth transitions between slides */
-@keyframes fadeVisibility {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 /* Landing Page */
-
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
 
 #landing-page {
     height: 100vh;    
@@ -184,24 +94,21 @@ section>* {
     margin-bottom: 5%;
 }
 
-
-
 .container {
     display: flex;
     justify-content: space-around;
     width: 80%;
-    background-color: black;
 }
 
 .logo {
-    background:url('../images/project_logo.png')no-repeat center;
+    background: url('../images/project_logo.png') no-repeat center;
     background-size: cover;
     width: 300px;
     height: 300px;
 }
 
 .product {
-    background:url('../images/product.jpg')no-repeat center;
+    background: url('../images/product.jpg') no-repeat center;
     background-size: cover;
     width: 300px;
     height: 300px;  
@@ -228,7 +135,85 @@ section>* {
     text-align: center;
 }
 
+/* Carousel */
+
+.carousel {
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+    display: none;
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+    /* Carousel Navigation control styles */
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+    border-radius: 50px;
+    background-color: var(--color-6-wh);
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 20px;
+}
+
+.carousel-dots {
+    text-align: center;
+}
+
+.dot {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.dot:focus {
+    border: 1px solid var(--color-4-re-dk);
+}
+
+/* handle smooth transitions between slides */
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Map Section  */
+
 #map { 
     height: 500px;
     max-width: 70%;
@@ -246,10 +231,11 @@ section>* {
     font-weight: 400;
 }
 
-/* Overwrite the position of the content on the popup */
+    /* Overwrite the position of the content on the popup */
 .leaflet-popup-content {
     text-align: center;
 }
+
 footer {
     font-size: small;
 }
