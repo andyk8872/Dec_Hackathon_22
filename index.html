@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Leaflet CSS - Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+
     <title>Home</title>
 </head>
 
@@ -52,8 +57,21 @@
                 non pulvinar odio ante quis nulla. Suspendisse dapibus est eget enim tristique, at ullamcorper ex euismod. Proin tempor eros eget sagittis venenatis.
             </p>
         </div>
+    
+    <!-- Map section where a mock version of our product will be featured as an example -->
+    <section id="map-section">
+
+        <div id="map"></div>
+
     </section>
     <script src="assets/js/index.js"></script>
+
+    <!-- Leaflet JavaScript - Map -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+
+     <script src="assets/js/map.js"></script>
 </body>
 
 </html>
