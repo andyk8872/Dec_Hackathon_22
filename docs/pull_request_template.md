@@ -12,3 +12,5 @@
 ## Screenshots
 - IF YOU HAVE ANY SCREENSHOTS, INCLUDE THEM HERE.
 - IF YOU HAVE NO SCREENSHOTS, ENTER 'None'
+
+    _tip:_ If you use Snipping Tool, you can paste your screenshots in here directly, without needing to save them! 👏👏
