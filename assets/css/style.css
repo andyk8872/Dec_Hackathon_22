@@ -105,6 +105,12 @@ section > * {
     }
 }
 
+/* About Section */
+
+.about-section h2 {
+    text-align: center;
+}
+
 /* Map Section  */
 #map { 
     height: 500px;
