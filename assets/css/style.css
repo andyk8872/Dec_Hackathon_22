@@ -30,6 +30,64 @@ section {
     margin: 2rem 0;
 }
 
+/* Landing Page */
+
+#landing-page {
+    height: 100vh;    
+}
+
+.upper,
+.lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.upper {
+    margin-bottom: 5%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.logo {
+    background: url('../images/project_logo.png') no-repeat center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.product {
+    background: url('../images/product.jpg') no-repeat center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;  
+}
+
+.text-align {
+    text-align: center;    
+}
+
+.left h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-family: "Redhat", sans-serif;
+}
+
+.left {
+    align-self: center;
+    width: 50%;
+}
+
+/* About Section */
+
+.about-section h2 {
+    text-align: center;
+}
+
 /* Carousel */
 
 .carousel {
@@ -54,8 +112,7 @@ section {
     height: auto;
 }
 
-
-    /* Navigation control styles */
+    /* Carousel Navigation control styles */
 .carousel .carousel-actions {
     display: flex;
     width: 100%;
@@ -106,68 +163,6 @@ section {
     100% {
         opacity: 1;
     }
-}
-
-/* Landing Page */
-
-
-
-#landing-page {
-    height: 100vh;    
-}
-
-.upper,
-.lower {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-
-.upper {
-    margin-bottom: 5%;
-}
-
-
-
-.container {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-}
-
-.logo {
-    background: url('../images/project_logo.png')no-repeat center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-}
-
-.product {
-    background:url('../images/product.jpg')no-repeat center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;  
-}
-
-.text-align {
-    text-align: center;    
-}
-
-.left h1 {
-    font-size: 3rem;
-    margin-bottom: 25px;
-    font-family: "Redhat", sans-serif;
-}
-
-.left {
-    align-self: center;
-    width: 50%;
-}
-
-/* About Section */
-
-.about-section h2 {
-    text-align: center;
 }
 
 /* Map Section  */
