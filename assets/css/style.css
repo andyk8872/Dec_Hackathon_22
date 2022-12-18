@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
 /* globals */
 
 * {
@@ -7,15 +9,19 @@
 }
 
 :root {
-    --primary-color: #00372d;
-    --secondary-color: #f4f6ed;
+    --color-1-gr: #00372d;
+    --color-2-ye-dk: #aa9049;
+    --color-3-ye-li: #ffbd59;
+    --color-4-re-dk: #782722;
+    --color-5-re-li: #b62d29;
+    --color-6-wh: #f4f6ed;
 }
 
 /* index */
 
 body {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--color-1-gr);
+    color: var(--color-6-wh);
     font-size: 1.4rem;
     font-weight: 700;
 }
@@ -23,11 +29,6 @@ body {
 section {
     margin: 2rem 0;
 }
-
-section>* {
-    padding: 1rem;
-}
-
 
 /* Carousel */
 
@@ -40,14 +41,11 @@ section>* {
 .carousel .carousel-item,
 .carousel .carousel-item-hidden {
     display: none;
-    /* hide all slide images not currently being viewed */
 }
 
 .carousel .carousel-item-visible {
     display: block;
-    /* show current slide image */
     animation: fadeVisibility 0.5s;
-    /* for fading effect when switching between slides */
 }
 
 .carousel .carousel-item img {
@@ -57,23 +55,19 @@ section>* {
 }
 
 
-/* Navigation control styles */
+    /* Navigation control styles */
 .carousel .carousel-actions {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    /* put space between the navigation buttons */
     position: absolute;
-    /* position navigation buttons on top */
     top: 50%;
-    /* center navigation buttons on the slide */
     transform: translateY(-50%);
-    /* align navigation buttons */
 }
 
 .carousel .carousel-actions button {
     border-radius: 50px;
-    background-color: white;
+    background-color: var(--color-6-wh);
     border: 0;
     font-size: 16px;
     font-weight: bold;
@@ -84,12 +78,10 @@ section>* {
 
 .carousel .carousel-actions button#carousel-button-prev {
     margin-left: 20px;
-    /* prevent previous button from touching the side*/
 }
 
 .carousel .carousel-actions button#carousel-button-next {
     margin-right: 20px;
-    /* prevent next button from touching the side*/
 }
 
 .carousel-dots {
@@ -97,16 +89,15 @@ section>* {
 }
 
 .dot {
+    pointer-events: none;
     opacity: 0.7;
-    /* gray out dots for slides not being visted */
 }
 
 .dot:focus {
-    border: 1px solid black;
-    /* dot for currently visited slide */
+    border: 1px solid var(--color-4-re-dk);
 }
 
-/* hanlde smooth transitions between slides */
+/* handle smooth transitions between slides */
 @keyframes fadeVisibility {
     0% {
         opacity: 0;
@@ -119,7 +110,7 @@ section>* {
 
 /* Landing Page */
 
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
 
 #landing-page {
     height: 100vh;    
@@ -142,11 +133,10 @@ section>* {
     display: flex;
     justify-content: space-around;
     width: 80%;
-    background-color: black;
 }
 
 .logo {
-    background:url('../images/project_logo.png')no-repeat center;
+    background: url('../images/project_logo.png')no-repeat center;
     background-size: cover;
     width: 300px;
     height: 300px;
@@ -181,6 +171,7 @@ section>* {
 }
 
 /* Map Section  */
+
 #map { 
     height: 500px;
     max-width: 70%;
@@ -198,7 +189,7 @@ section>* {
     font-weight: 400;
 }
 
-/* Overwrite the position of the content on the popup */
+    /* Overwrite the position of the content on the popup */
 .leaflet-popup-content {
     text-align: center;
 }
