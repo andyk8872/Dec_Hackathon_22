@@ -174,3 +174,31 @@ section>* {
     width: 50%;
 }
 
+/* About Section */
+
+.about-section h2 {
+    text-align: center;
+}
+
+/* Map Section  */
+#map { 
+    height: 500px;
+    max-width: 70%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.map-popup {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.map-wishes {
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Overwrite the position of the content on the popup */
+.leaflet-popup-content {
+    text-align: center;
+}
