@@ -202,3 +202,14 @@ section>* {
 .leaflet-popup-content {
     text-align: center;
 }
+
+
+
+/*----404----*/
+
+.fourofour-container {
+    background: url('../images/santa.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    
+}
