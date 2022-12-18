@@ -104,3 +104,9 @@ section > * {
         opacity: 1;
     }
 }
+
+/* About Section */
+
+.about-section h2 {
+    text-align: center;
+}
