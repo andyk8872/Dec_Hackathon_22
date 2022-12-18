@@ -24,7 +24,7 @@ section {
     margin: 2rem 0;
 }
 
-section > * {
+section>* {
     padding: 1rem;
 }
 
@@ -39,12 +39,15 @@ section > * {
 
 .carousel .carousel-item,
 .carousel .carousel-item-hidden {
-    display: none; /* hide all slide images not currently being viewed */
+    display: none;
+    /* hide all slide images not currently being viewed */
 }
 
 .carousel .carousel-item-visible {
-    display: block; /* show current slide image */
-    animation: fadeVisibility 0.5s; /* for fading effect when switching between slides */
+    display: block;
+    /* show current slide image */
+    animation: fadeVisibility 0.5s;
+    /* for fading effect when switching between slides */
 }
 
 .carousel .carousel-item img {
@@ -58,10 +61,14 @@ section > * {
 .carousel .carousel-actions {
     display: flex;
     width: 100%;
-    justify-content: space-between; /* put space between the navigation buttons */
-    position: absolute; /* position navigation buttons on top */
-    top: 50%; /* center navigation buttons on the slide */
-    transform: translateY(-50%); /* align navigation buttons */
+    justify-content: space-between;
+    /* put space between the navigation buttons */
+    position: absolute;
+    /* position navigation buttons on top */
+    top: 50%;
+    /* center navigation buttons on the slide */
+    transform: translateY(-50%);
+    /* align navigation buttons */
 }
 
 .carousel .carousel-actions button {
@@ -76,23 +83,27 @@ section > * {
 }
 
 .carousel .carousel-actions button#carousel-button-prev {
-    margin-left: 20px; /* prevent previous button from touching the side*/
+    margin-left: 20px;
+    /* prevent previous button from touching the side*/
 }
 
 .carousel .carousel-actions button#carousel-button-next {
-    margin-right: 20px;  /* prevent next button from touching the side*/
+    margin-right: 20px;
+    /* prevent next button from touching the side*/
 }
 
 .carousel-dots {
-    text-align: center; 
+    text-align: center;
 }
 
 .dot {
-    opacity: 0.7; /* gray out dots for slides not being visted */
+    opacity: 0.7;
+    /* gray out dots for slides not being visted */
 }
 
 .dot:focus {
-    border: 1px solid black; /* dot for currently visited slide */
+    border: 1px solid black;
+    /* dot for currently visited slide */
 }
 
 /* hanlde smooth transitions between slides */
@@ -100,9 +111,67 @@ section > * {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
+}
+
+/* Landing Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+#landing-page {
+    height: 100vh;    
+}
+
+.upper,
+.lower {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.upper {
+    margin-bottom: 5%;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    background-color: black;
+}
+
+.logo {
+    background:url('../images/project_logo.png')no-repeat center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.product {
+    background:url('../images/product.jpg')no-repeat center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;  
+}
+
+.text-align {
+    text-align: center;    
+}
+
+.left h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-family: "Redhat", sans-serif;
+}
+
+.left {
+    align-self: center;
+    width: 50%;
 }
 
 /* About Section */
