@@ -250,6 +250,11 @@ section>* {
 .leaflet-popup-content {
     text-align: center;
 }
-footer {
+footer li {
     font-size: small;
-}
+    height:150px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    }
+
