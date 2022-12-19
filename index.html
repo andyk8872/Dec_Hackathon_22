@@ -18,13 +18,19 @@
 <body>
     <nav>
         <div class="navbar">
-            <a class="active" href="#"><img src="assets/images/project_logo.png" id="logo"
-                    alt="Festive Memories logo"></a>
+            <a href="index.html">
+                <img src="assets/images/project_logo.png" id="logo" alt="Festive Memories logo">
+            </a>
             <ul id="menu">
-                <li><a class="nav_link" href="#">Home <i class="fa-solid fa-gift"></i></a></li>
-                <li><a class="nav_link" href="#">About <i class="fa-solid fa-candy-cane"></i></a></li>
-                <li><a class="nav_link" href="#">Product <i class="fa-solid fa-sleigh"></i></a></li>
-                <li><a class="nav_link" href="#">Map <i class="fa-solid fa-holly-berry"></i></a></li>
+                <li>
+                    <a class="nav_link" href="index.html">Home <i class="fa-solid fa-gift"></i></a>
+                </li>
+                <li>
+                    <a class="nav_link" href="#about">About <i class="fa-solid fa-candy-cane"></i></a>
+                </li>
+                <li>
+                    <a class="nav_link" href="#map-section">Map <i class="fa-solid fa-holly-berry"></i></a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -34,20 +40,10 @@
             <div class="upper">
                 <div class="container">
                     <div class="left a">
-                        <h1 class="text-align">Geo-Memory 🌐</h1>
-                        <P class="text-align">Bridging the gap, using your device!</P>
+                        <h1 class="text-align">Festive Memories 🎄</h1>
+                        <P class="text-align">Showcase your fav places to be this Christmas!</P>
                     </div>
-                    <div class="logo top-margin"></div>
-                </div>
-            </div>
-            <div class="lower">
-                <div class="container">
-                    <div class="product space"></div>
-                    <div class="left">
-                        <P>
-                            What is Geo-Memory.......
-                        </P>
-                    </div>
+                    <div class="landing-logo"></div>
                 </div>
             </div>
     </section>
@@ -55,23 +51,23 @@
     <section id="about">
         <div id="carousel">
             <div class="carousel-item carousel-item-visible">
-                <img src="assets/images/2-xmas-kids.jpg"
+                <img class="carousel-image" src="assets/images/2-xmas-kids.jpg"
                     alt="two children dressed in santa suits sitting on a couch" />
             </div>
             <div class="carousel-item">
-                <img src="assets/images/kid-xmas-tree.jpg"
+                <img class="carousel-image" src="assets/images/kid-xmas-tree.jpg"
                     alt="A young child stands in front of a lit christmas tree" />
             </div>
             <div class="carousel-item">
-                <img src="assets/images/xmas-couple.jpg"
+                <img class="carousel-image" src="assets/images/xmas-couple.jpg"
                     alt="A happy couple dressed in festive attire" />
             </div>
             <div class="carousel-item">
-                <img src="assets/images/xmas-family.jpg"
+                <img class="carousel-image" src="assets/images/xmas-family.jpg"
                     alt="A family of four taking a selfie" />
             </div>
             <div class="carousel-item">
-                <img src="assets/images/xmas-market.jpg"
+                <img class="carousel-image" src="assets/images/xmas-market.jpg"
                     alt="A woman having her picture taken in front of an xmas market" />
             </div>
             <div class="carousel-actions">
@@ -103,6 +99,7 @@
     <section id="map-section">
 
         <div id="test-product">
+            <h2>Take a snap 🤳</h2>
             <img id="test-product-img" src="assets/images/selfie.jpg">
             <a href="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos/_sample_.demo.html" target="_blank">
                 <button id="test-product-btn">📸 Take Your Picture</button>
@@ -113,9 +110,9 @@
 
     </section>
 
-    <footer>Showcase produced by
+    <footer>Showcase produced by <i>Team Survivors 💪</i>
 
-        <ul>
+        <ul id="footer-list">
             <li><a class="nav_link" href="https://github.com/Louibens" target="_blank">Louise</a></li>
             <li><a class="nav_link" href="https://github.com/tanisecarvalho" target="_blank">Tanise</a></li>
             <li><a class="nav_link" href="https://github.com/andyk8872" target="_blank">Andrew</a></li>
@@ -123,7 +120,7 @@
             <li><a class="nav_link" href="https://github.com/hernanpd" target="_blank">Hernan</a></li>
             <li><a class="nav_link" href="https://github.com/auxfuse" target="_blank">Anthony</a></li>
         </ul>
-        <p>Check us out and connect</p>
+        <i>Check us out and connect</i>
 
     </footer>
 
