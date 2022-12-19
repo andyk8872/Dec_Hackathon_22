@@ -1,130 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <!-- Leaflet CSS - Map -->
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <!-- Leaflet CSS - Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
-        <title>Home</title>
-    </head>
+    <title>Home</title>
+</head>
 
-    <body>
-        <nav>
-            <div class="navbar">
-                <a class="active" href="#"><img src="assets/images/project_logo.png" id="logo"
-                        alt="Festive Memories logo"></a>
-                <ul id="menu">
-                    <li><a class="nav_link" href="#">Home <i class="fa-solid fa-gift"></i></a></li>
-                    <li><a class="nav_link" href="#">About <i class="fa-solid fa-candy-cane"></i></a></li>
-                    <li><a class="nav_link" href="#">Product <i class="fa-solid fa-sleigh"></i></a></li>
-                    <li><a class="nav_link" href="#">Map <i class="fa-solid fa-holly-berry"></i></a></li>
-                </ul>
-            </div>
-        </nav>
-        <section id="landing-page">
+<body>
+    <nav>
+        <div class="navbar">
+            <a class="active" href="#"><img src="assets/images/project_logo.png" id="logo"
+                    alt="Festive Memories logo"></a>
+            <ul id="menu">
+                <li><a class="nav_link" href="#">Home <i class="fa-solid fa-gift"></i></a></li>
+                <li><a class="nav_link" href="#">About <i class="fa-solid fa-candy-cane"></i></a></li>
+                <li><a class="nav_link" href="#">Product <i class="fa-solid fa-sleigh"></i></a></li>
+                <li><a class="nav_link" href="#">Map <i class="fa-solid fa-holly-berry"></i></a></li>
+            </ul>
+        </div>
+    </nav>
 
-
+     <!-- The Landing Page -->
+    <section id="landing-page">
             <div class="upper">
                 <div class="container">
                     <div class="left a">
                         <h1 class="text-align">Geo-Memory 🌐</h1>
                         <P class="text-align">Bridging the gap, using your device!</P>
                     </div>
-                    <div class="logo a"></div>
+                    <div class="logo top-margin"></div>
                 </div>
-
             </div>
-
             <div class="lower">
                 <div class="container">
                     <div class="product space"></div>
-                    <div class="left a">
+                    <div class="left">
                         <P>
                             What is Geo-Memory.......
                         </P>
                     </div>
-
                 </div>
             </div>
+    </section>
 
-
-        </section>
-
-        <section id="about">
-            <div id="carousel">
-                <div class="carousel-item carousel-item-visible">
-                    <img src="https://images.unsplash.com/photo-1537211261771-e525b9e4049b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=450&q=80"
-                        alt="Squirrel " />
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1503925802536-c9451dcd87b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=450&q=80"
-                        alt="Zombie " />
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1509558567730-6c838437b06b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=450&q=80"
-                        alt="Zombie " />
-                </div>
-                
-                <div class="carousel-actions">
-                    <button id="carousel-button-prev" aria-label="Previous"><strong>
-                            << </strong></button>
-                    <button id="carousel-button-next" aria-label="Next"><strong> >> </strong></button>
-                </div>
-                <div class="carousel-dots">
-                    <input class="dot selected-dot" type="radio" name="dot" checked />
-                    <input class="dot" type="radio" name="dot" />
-                    <input class="dot" type="radio" name="dot" />
-                </div>
+    <section id="about">
+        <div id="carousel">
+            <div class="carousel-item carousel-item-visible">
+                <img src="https://images.unsplash.com/photo-1537211261771-e525b9e4049b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=450&q=80"
+                    alt="Squirrel " />
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1503925802536-c9451dcd87b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=450&q=80"
+                    alt="Zombie " />
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1509558567730-6c838437b06b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=450&q=80"
+                    alt="Zombie " />
             </div>
 
-            <div id="about-detail">
-                <h2> About </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin nulla nulla, sed congue nisi
-                    consequat quis. Suspendisse eu eros at diam efficitur feugiat sit amet id eros. Cras suscipit congue
-                    augue ac auctor. Orci varius natoque penatibus et magnis dis parturient
-                    montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada
-                    fames ac turpis egestas. Vestibulum interdum, metus vel dictum dignissim, ex sapien venenatis tortor,
-                    non pulvinar odio ante quis nulla. Suspendisse dapibus est eget enim tristique, at ullamcorper ex
-                    euismod. Proin tempor eros eget sagittis venenatis.
-                </p>
+            <div class="carousel-actions">
+                <button id="carousel-button-prev" aria-label="Previous"><strong>
+                        << </strong></button>
+                <button id="carousel-button-next" aria-label="Next"><strong> >> </strong></button>
             </div>
-        </section>
+            <div class="carousel-dots">
+                <input class="dot selected-dot" type="radio" name="dot" checked />
+                <input class="dot" type="radio" name="dot" />
+                <input class="dot" type="radio" name="dot" />
+            </div>
+        </div>
 
-        <!-- Map section where a mock version of our product will be featured as an example -->
-        <section id="map-section">
+        <div id="about-detail">
+            <h2> About </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin nulla nulla, sed congue nisi
+                consequat quis. Suspendisse eu eros at diam efficitur feugiat sit amet id eros. Cras suscipit congue
+                augue ac auctor. Orci varius natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                fames ac turpis egestas. Vestibulum interdum, metus vel dictum dignissim, ex sapien venenatis tortor,
+                non pulvinar odio ante quis nulla. Suspendisse dapibus est eget enim tristique, at ullamcorper ex
+                euismod. Proin tempor eros eget sagittis venenatis.
+            </p>
+        </div>
+    </section>
 
-            <div id="map"></div>
+    <!-- Map section where a mock version of our product will be featured as an example -->
+    <section id="map-section">
 
-        </section>
+        <div id="map"></div>
 
-        <footer>Showcase produced by
-            
-            <ul>
-                <li><a class="nav_link" href="https://github.com/Louibens" target="_blank">Louise</a></li>
-                <li><a class="nav_link" href="https://github.com/tanisecarvalho" target="_blank">Tanise</a></li>
-                <li><a class="nav_link" href="https://github.com/andyk8872" target="_blank">Andrew</a></li>
-                <li><a class="nav_link" href="https://github.com/chasakara" target="_blank">Tinashe</a></li>
-                <li><a class="nav_link" href="https://github.com/hernanpd" target="_blank">Hernan</a></li>
-                <li><a class="nav_link" href="https://github.com/auxfuse" target="_blank">Anthony</a></li>
-            </ul>
-            <p>Check us out and connect</p>
+    </section>
 
-        </footer>
+    <footer>Showcase produced by
 
-        <script src="assets/js/index.js"></script>
-        <!-- Leaflet JavaScript - Map -->
-        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-        <script src="assets/js/map.js"></script>
-        <script src="https://kit.fontawesome.com/70893e8ef4.js" crossorigin="anonymous"></script>
+        <ul>
+            <li><a class="nav_link" href="https://github.com/Louibens" target="_blank">Louise</a></li>
+            <li><a class="nav_link" href="https://github.com/tanisecarvalho" target="_blank">Tanise</a></li>
+            <li><a class="nav_link" href="https://github.com/andyk8872" target="_blank">Andrew</a></li>
+            <li><a class="nav_link" href="https://github.com/chasakara" target="_blank">Tinashe</a></li>
+            <li><a class="nav_link" href="https://github.com/hernanpd" target="_blank">Hernan</a></li>
+            <li><a class="nav_link" href="https://github.com/auxfuse" target="_blank">Anthony</a></li>
+        </ul>
+        <p>Check us out and connect</p>
 
-    </body>
+    </footer>
+
+    <script src="assets/js/index.js"></script>
+    <!-- Leaflet JavaScript - Map -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="assets/js/map.js"></script>
+    <script src="https://kit.fontawesome.com/70893e8ef4.js" crossorigin="anonymous"></script>
+
+</body>
 
 </html>
