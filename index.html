@@ -10,60 +10,69 @@
 
     <!-- Leaflet CSS - Map -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-     crossorigin=""/>
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 
     <title>Home</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="active" href="#"><img src="assets/images/project_logo.png" height="60px" width="120px"></a>
-        <a href="#"> #</a>
-        <a href="#"></i> #</a>
-    </div>
+    <nav>
+        <div class="navbar">
+            <a class="active" href="#"><img src="assets/images/project_logo.png" id="logo"
+                    alt="Festive Memories logo"></a>
+            <ul id="menu">
+                <li><a class="nav_link" href="#">Home <i class="fa-solid fa-gift"></i></a></li>
+                <li><a class="nav_link" href="#">About <i class="fa-solid fa-candy-cane"></i></a></li>
+                <li><a class="nav_link" href="#">Product <i class="fa-solid fa-sleigh"></i></a></li>
+                <li><a class="nav_link" href="#">Map <i class="fa-solid fa-holly-berry"></i></a></li>
+            </ul>
+        </div>
+    </nav>
 
+     <!-- The Landing Page -->
     <section id="landing-page">
-        <div class="upper">
-            <div class="container">
-                <div class="left a">
-                    <h1 class="text-align">PRODUCT NAME</h1>
-                    <P class="text-align">SHORT SENTENCE DEFINING THE PRODUCT</P>
+            <div class="upper">
+                <div class="container">
+                    <div class="left a">
+                        <h1 class="text-align">Geo-Memory 🌐</h1>
+                        <P class="text-align">Bridging the gap, using your device!</P>
+                    </div>
+                    <div class="logo top-margin"></div>
                 </div>
-                <div class="logo a"></div>
             </div>
-
-        </div>
-
-        <div class="lower">
-            <div class="container">
-                <div class="product a"></div>
-                <div class="left a">
-                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam fugit quaerat facere rerum optio
-                        doloribus assumenda iusto. Vel qui beatae optio cumque voluptatum, dignissimos omnis modi
-                        placeat atque quisquam. Reprehenderit blanditiis neque saepe rem dicta reiciendis mollitia nemo!
-                        Dicta, nobis!</P>
+            <div class="lower">
+                <div class="container">
+                    <div class="product space"></div>
+                    <div class="left">
+                        <P>
+                            What is Geo-Memory.......
+                        </P>
+                    </div>
                 </div>
-                
             </div>
-        </div>
     </section>
 
-
-    <section>
-        <div class="carousel">
+    <section id="about">
+        <div id="carousel">
             <div class="carousel-item carousel-item-visible">
-                <img src="https://images.unsplash.com/photo-1537211261771-e525b9e4049b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=450&q=80"
-                    alt="Squirrel " />
+                <img src="assets/images/2-xmas-kids.jpg"
+                    alt="two children dressed in santa suits sitting on a couch" />
             </div>
             <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1503925802536-c9451dcd87b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=450&q=80"
-                    alt="Zombie " />
+                <img src="assets/images/kid-xmas-tree.jpg"
+                    alt="A young child stands in front of a lit christmas tree" />
             </div>
             <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1509558567730-6c838437b06b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=450&q=80"
-                    alt="Zombie " />
-
+                <img src="assets/images/xmas-couple.jpg"
+                    alt="A happy couple dressed in festive attire" />
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/xmas-family.jpg"
+                    alt="A family of four taking a selfie" />
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/xmas-market.jpg"
+                    alt="A woman having her picture taken in front of an xmas market" />
             </div>
             <div class="carousel-actions">
                 <button id="carousel-button-prev" aria-label="Previous"><strong>
@@ -74,33 +83,57 @@
                 <input class="dot selected-dot" type="radio" name="dot" checked />
                 <input class="dot" type="radio" name="dot" />
                 <input class="dot" type="radio" name="dot" />
+                <input class="dot" type="radio" name="dot" />
+                <input class="dot" type="radio" name="dot" />
             </div>
         </div>
-    </section>
-    <section id="about">
-        <div class="about-section">
-            <h2 > About </h2>
+
+        <div id="about-detail">
+            <h2> About </h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sollicitudin nulla nulla, sed congue nisi consequat quis. Suspendisse eu eros at diam efficitur feugiat sit amet id eros. Cras suscipit congue augue ac auctor. Orci varius natoque penatibus et magnis dis parturient 
-                montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum interdum, metus vel dictum dignissim, ex sapien venenatis tortor, 
-                non pulvinar odio ante quis nulla. Suspendisse dapibus est eget enim tristique, at ullamcorper ex euismod. Proin tempor eros eget sagittis venenatis.
+                Festive Memories is a web application that aims to bridge the gap between loves ones around the globe. 
+                Using the camera on your device, you can take a picture directly through our app and leave a message for family and friends to see. 
+                Your loved ones will love to see what you are getting up to over the holidays and your custom message to them.
+                In addition, your photo will be added to an interactive map showing where and when the photo was taken.
             </p>
         </div>
-    
+    </section>
+
     <!-- Map section where a mock version of our product will be featured as an example -->
     <section id="map-section">
+
+        <div id="test-product">
+            <img id="test-product-img" src="assets/images/selfie.jpg">
+            <a href="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos/_sample_.demo.html" target="_blank">
+                <button id="test-product-btn">📸 Take Your Picture</button>
+            </a>
+        </div>
 
         <div id="map"></div>
 
     </section>
-    <script src="assets/js/index.js"></script>
 
+    <footer>Showcase produced by
+
+        <ul>
+            <li><a class="nav_link" href="https://github.com/Louibens" target="_blank">Louise</a></li>
+            <li><a class="nav_link" href="https://github.com/tanisecarvalho" target="_blank">Tanise</a></li>
+            <li><a class="nav_link" href="https://github.com/andyk8872" target="_blank">Andrew</a></li>
+            <li><a class="nav_link" href="https://github.com/chasakara" target="_blank">Tinashe</a></li>
+            <li><a class="nav_link" href="https://github.com/hernanpd" target="_blank">Hernan</a></li>
+            <li><a class="nav_link" href="https://github.com/auxfuse" target="_blank">Anthony</a></li>
+        </ul>
+        <p>Check us out and connect</p>
+
+    </footer>
+
+    <script src="assets/js/index.js"></script>
     <!-- Leaflet JavaScript - Map -->
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-     crossorigin=""></script>
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="assets/js/map.js"></script>
+    <script src="https://kit.fontawesome.com/70893e8ef4.js" crossorigin="anonymous"></script>
 
-     <script src="assets/js/map.js"></script>
 </body>
 
 </html>
