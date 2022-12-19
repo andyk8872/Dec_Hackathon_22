@@ -392,5 +392,7 @@ footer .nav_link:hover {
     background: url('../images/santa.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
