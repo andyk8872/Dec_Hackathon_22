@@ -10,6 +10,7 @@
 
 :root {
     --color-1-gr: #00372d;
+    --color-1-gr-o50: #00372d85;
     --color-2-ye-dk: #aa9049;
     --color-2-ye-dk-o50: #aa904986;
     --color-3-ye-li: #ffbd59;
@@ -75,6 +76,9 @@ section {
 #landing-page {   
     position: relative;
     min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #landing-page::after {
@@ -87,8 +91,7 @@ section {
     z-index: -1;   
   }
 
-.upper,
-.lower {
+.upper {
     display: flex;    
     align-items: center;
     justify-content: center;    
@@ -102,8 +105,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    margin-top: 1rem;
+    width: 100%;
 }
 
 .landing-logo {
@@ -128,7 +130,11 @@ section {
 
 .left {
     align-self: center;
-    width: 50%;
+    background-color: var(--color-1-gr-o50);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 5px dashed var(--color-1-gr);
+    margin: 0 1rem;
 }
 
 .space {
@@ -353,7 +359,8 @@ footer .nav_link:hover {
 
     .container {
 		flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-start;
+        margin-left: 1rem;
 	}
 
 }
@@ -375,8 +382,6 @@ footer .nav_link:hover {
         line-height: 4rem;
     }
 }
-
-
 
 /*----404----*/
 
