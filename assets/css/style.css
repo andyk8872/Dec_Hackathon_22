@@ -370,6 +370,15 @@ footer .nav_link:hover {
     justify-content: center;
 }
 
+.fourofour-container div {
+    margin: 4rem;
+    padding: 1rem;
+    background-color: var(--color-1-gr-o50);
+    border-radius: 2rem;
+    border: 5px dashed var(--color-1-gr);
+    width: fit-content;
+}
+
 /* media queries */
 
 @media screen and (min-width: 576px) {
