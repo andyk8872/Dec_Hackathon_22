@@ -11,6 +11,7 @@
 :root {
     --color-1-gr: #00372d;
     --color-2-ye-dk: #aa9049;
+    --color-2-ye-dk-o50: #aa904986;
     --color-3-ye-li: #ffbd59;
     --color-4-re-dk: #782722;
     --color-5-re-li: #b62d29;
@@ -26,11 +27,11 @@
     justify-content: center;
 }
 
-a, a:hover, a:visited, a:active {
+.nav_link, .nav_link:hover, .nav_link:visited, .nav_link:active {
     color: inherit;
     text-decoration: none;
     padding: 50px;
-   }
+}
 
 #logo {
     height: 150px; 
@@ -78,10 +79,6 @@ section {
 }
 
 /* Landing Page */
-
-#landing-page {
-    height: 100vh;    
-}
 
 .upper,
 .lower {
@@ -135,48 +132,50 @@ section {
     margin-bottom: 15px;
 }
 
-/* media queries */
-
-@media screen and (min-width: 768px) {
-	
-	.container {
-		flex-direction: row;
-        justify-content: space-around;
-	  }
-}
-
 /* About Section */
 
-.about-section h2 {
-    text-align: center;
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+#about-detail {
+    width: 80%;
+}
+
+#about-detail > * {
+    line-height: 2rem;
 }
 
 /* Carousel */
 
-.carousel {
-    max-width: 600px;
+#carousel {
+    width: 80%;
     position: relative;
     margin: 0 auto;
 }
 
-.carousel .carousel-item,
-.carousel .carousel-item-hidden {
+#carousel .carousel-item,
+#carousel .carousel-item-hidden {
     display: none;
 }
 
-.carousel .carousel-item-visible {
+#carousel .carousel-item-visible {
     display: block;
     animation: fadeVisibility 0.5s;
 }
 
-.carousel .carousel-item img {
+#carousel .carousel-item img {
     width: 100%;
     max-width: 100%;
     height: auto;
 }
 
     /* Carousel Navigation control styles */
-.carousel .carousel-actions {
+#carousel .carousel-actions {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -185,7 +184,7 @@ section {
     transform: translateY(-50%);
 }
 
-.carousel .carousel-actions button {
+#carousel .carousel-actions button {
     border-radius: 50px;
     background-color: var(--color-6-wh);
     border: 0;
@@ -196,25 +195,33 @@ section {
     height: 40px;
 }
 
-.carousel .carousel-actions button#carousel-button-prev {
+#carousel .carousel-actions button#carousel-button-prev {
     margin-left: 20px;
 }
 
-.carousel .carousel-actions button#carousel-button-next {
+#carousel .carousel-actions button#carousel-button-next {
     margin-right: 20px;
 }
 
 .carousel-dots {
-    text-align: center;
+    position: absolute;
+    top: calc(100% - 2.85rem);
+    width: 100%;
+    height: 2.5rem;
+    background-color: var(--color-2-ye-dk-o50);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .dot {
     pointer-events: none;
-    opacity: 0.7;
+    scale: 1.5;
 }
 
-.dot:focus {
-    border: 1px solid var(--color-4-re-dk);
+.dot:checked {
+    accent-color: var(--color-4-re-dk);
 }
 
 /* handle smooth transitions between slides */
@@ -262,12 +269,12 @@ footer li {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    }
+}
 
-footer a:hover {
+footer .nav_link:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
-      }
+}
       
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -281,4 +288,49 @@ footer a:hover {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* media queries */
+
+@media screen and (min-width: 576px) {
+    #about-detail > * {
+        line-height: 2.5rem;
     }
+}
+
+@media screen and (min-width: 768px) {
+
+    #about {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 1rem;
+        gap: 1rem;
+    }
+
+    #about-detail {
+        width: 50%;
+    }
+
+    #carousel {
+        width: 50%;
+    }
+
+    .container {
+		flex-direction: row;
+        justify-content: space-around;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+	#about-detail > * {
+        line-height: 3.2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #about-detail > * {
+        line-height: 4rem;
+    }
+}
