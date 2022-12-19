@@ -38,6 +38,8 @@ A fictional image-sharing web application, that utilises the user's mobile/local
 
 - https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API/Taking_still_photos
 
+- https://www.freecodecamp.org/news/how-to-get-user-location-with-javascript-geolocation-api/
+
 - take picture using device
 - save picture to device file directory (mobile phone gallery)
 - add geolocation meta data
